@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { API_ENDPOINTS, fetchData } from '../config/apiConfig'
 import './LocationSelector.css'
 
-const LocationSelector: React.FC = () => {
+const CitySelector: React.FC = () => {
   const [countries, setCountries] = useState<string[]>([])
   const [states, setStates] = useState<string[]>([])
   const [cities, setCities] = useState<string[]>([])
@@ -142,4 +142,4 @@ const LocationSelector: React.FC = () => {
   )
 }
 
-export default LocationSelector
+export default CitySelector
