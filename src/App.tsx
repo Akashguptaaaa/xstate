@@ -1,11 +1,11 @@
 import './App.css'
-import CitySelector from './components/LocationSelector'
+import LocationSelector from './components/LocationSelector'
 
 function App() {
   return (
     <>
       <section id="center">
-        <CitySelector />
+        <LocationSelector />
       </section>
     </>
   )
