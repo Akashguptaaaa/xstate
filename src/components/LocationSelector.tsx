@@ -86,7 +86,7 @@ const LocationSelector: React.FC = () => {
               disabled={loading}
               className="dropdown-select"
             >
-              <option value="">Select Country</option>
+              <option value="" key="country-default">Select Country</option>
               {countries.map((country) => (
                 <option key={country} value={country}>
                   {country}
@@ -103,7 +103,7 @@ const LocationSelector: React.FC = () => {
               disabled={!selectedCountry || loading}
               className="dropdown-select"
             >
-              <option value="">Select State</option>
+              <option value="" key="state-default">Select State</option>
               {states.map((state) => (
                 <option key={state} value={state}>
                   {state}
@@ -120,7 +120,7 @@ const LocationSelector: React.FC = () => {
               disabled={!selectedState || loading}
               className="dropdown-select"
             >
-              <option value="">Select City</option>
+              <option value="" key="city-default">Select City</option>
               {cities.map((city) => (
                 <option key={city} value={city}>
                   {city}
